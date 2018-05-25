@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8071EAAF20B764C10097B7F8 /* pokemonmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8071EAAE20B764C10097B7F8 /* pokemonmusic.mp3 */; };
+		8071EAB120B767480097B7F8 /* boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8071EAB020B767480097B7F8 /* boom.mp3 */; };
 		80A4D76120B6678A008D32DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D76020B6678A008D32DB /* AppDelegate.swift */; };
 		80A4D76320B6678A008D32DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D76220B6678A008D32DB /* ViewController.swift */; };
 		80A4D76620B6678A008D32DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A4D76420B6678A008D32DB /* Main.storyboard */; };
@@ -14,10 +16,15 @@
 		80A4D76B20B6678A008D32DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A4D76920B6678A008D32DB /* LaunchScreen.storyboard */; };
 		80A4D77320B678EF008D32DB /* LetterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D77220B678EF008D32DB /* LetterObject.swift */; };
 		80A4D77520B67903008D32DB /* LetterObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D77420B67903008D32DB /* LetterObjectView.swift */; };
-		80A4D77720B67918008D32DB /* LevelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D77620B67918008D32DB /* LevelObject.swift */; };
+		80A4D77720B67918008D32DB /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D77620B67918008D32DB /* Level.swift */; };
+		80A4D77920B72CA1008D32DB /* LetterObjectViewBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D77820B72CA1008D32DB /* LetterObjectViewBehavior.swift */; };
+		80A4D79C20B739AC008D32DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D79B20B739AC008D32DB /* Constants.swift */; };
+		80A4D79E20B73E41008D32DB /* ChooseLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4D79D20B73E41008D32DB /* ChooseLevelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8071EAAE20B764C10097B7F8 /* pokemonmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pokemonmusic.mp3; sourceTree = "<group>"; };
+		8071EAB020B767480097B7F8 /* boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boom.mp3; sourceTree = "<group>"; };
 		80A4D75D20B6678A008D32DB /* MatchMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A4D76020B6678A008D32DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A4D76220B6678A008D32DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +34,10 @@
 		80A4D76C20B6678A008D32DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A4D77220B678EF008D32DB /* LetterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterObject.swift; sourceTree = "<group>"; };
 		80A4D77420B67903008D32DB /* LetterObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterObjectView.swift; sourceTree = "<group>"; };
-		80A4D77620B67918008D32DB /* LevelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelObject.swift; sourceTree = "<group>"; };
+		80A4D77620B67918008D32DB /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		80A4D77820B72CA1008D32DB /* LetterObjectViewBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterObjectViewBehavior.swift; sourceTree = "<group>"; };
+		80A4D79B20B739AC008D32DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		80A4D79D20B73E41008D32DB /* ChooseLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLevelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8071EAB220B7B1B60097B7F8 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				8071EAB520B7B1EE0097B7F8 /* ViewController */,
+				8071EAB420B7B1E40097B7F8 /* Model */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		8071EAB320B7B1D30097B7F8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8071EAB620B7B1FE0097B7F8 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8071EAB420B7B1E40097B7F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80A4D77620B67918008D32DB /* Level.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8071EAB520B7B1EE0097B7F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80A4D79D20B73E41008D32DB /* ChooseLevelViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8071EAB620B7B1FE0097B7F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80A4D77220B678EF008D32DB /* LetterObject.swift */,
+				80A4D77420B67903008D32DB /* LetterObjectView.swift */,
+				80A4D77820B72CA1008D32DB /* LetterObjectViewBehavior.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		80A4D75420B6678A008D32DB = {
 			isa = PBXGroup;
 			children = (
@@ -60,17 +113,27 @@
 		80A4D75F20B6678A008D32DB /* MatchMatch */ = {
 			isa = PBXGroup;
 			children = (
-				80A4D76020B6678A008D32DB /* AppDelegate.swift */,
+				8071EAB320B7B1D30097B7F8 /* Core */,
+				8071EAB220B7B1B60097B7F8 /* Level */,
+				80A4D79A20B73399008D32DB /* Supporting Files */,
 				80A4D76220B6678A008D32DB /* ViewController.swift */,
 				80A4D76420B6678A008D32DB /* Main.storyboard */,
-				80A4D76720B6678A008D32DB /* Assets.xcassets */,
-				80A4D76920B6678A008D32DB /* LaunchScreen.storyboard */,
 				80A4D76C20B6678A008D32DB /* Info.plist */,
-				80A4D77220B678EF008D32DB /* LetterObject.swift */,
-				80A4D77420B67903008D32DB /* LetterObjectView.swift */,
-				80A4D77620B67918008D32DB /* LevelObject.swift */,
 			);
 			path = MatchMatch;
+			sourceTree = "<group>";
+		};
+		80A4D79A20B73399008D32DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80A4D76720B6678A008D32DB /* Assets.xcassets */,
+				80A4D76920B6678A008D32DB /* LaunchScreen.storyboard */,
+				80A4D79B20B739AC008D32DB /* Constants.swift */,
+				8071EAAE20B764C10097B7F8 /* pokemonmusic.mp3 */,
+				8071EAB020B767480097B7F8 /* boom.mp3 */,
+				80A4D76020B6678A008D32DB /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8071EAB120B767480097B7F8 /* boom.mp3 in Resources */,
 				80A4D76B20B6678A008D32DB /* LaunchScreen.storyboard in Resources */,
+				8071EAAF20B764C10097B7F8 /* pokemonmusic.mp3 in Resources */,
 				80A4D76820B6678A008D32DB /* Assets.xcassets in Resources */,
 				80A4D76620B6678A008D32DB /* Main.storyboard in Resources */,
 			);
@@ -146,8 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A4D76320B6678A008D32DB /* ViewController.swift in Sources */,
-				80A4D77720B67918008D32DB /* LevelObject.swift in Sources */,
+				80A4D77920B72CA1008D32DB /* LetterObjectViewBehavior.swift in Sources */,
+				80A4D79E20B73E41008D32DB /* ChooseLevelViewController.swift in Sources */,
+				80A4D77720B67918008D32DB /* Level.swift in Sources */,
 				80A4D76120B6678A008D32DB /* AppDelegate.swift in Sources */,
+				80A4D79C20B739AC008D32DB /* Constants.swift in Sources */,
 				80A4D77320B678EF008D32DB /* LetterObject.swift in Sources */,
 				80A4D77520B67903008D32DB /* LetterObjectView.swift in Sources */,
 			);
@@ -286,12 +354,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6K5AE3SKV8;
+				DEVELOPMENT_TEAM = 5V6LQJ8PDZ;
 				INFOPLIST_FILE = MatchMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Zhifeng.MatchMatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZhifengTan.MatchMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,12 +371,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6K5AE3SKV8;
+				DEVELOPMENT_TEAM = 5V6LQJ8PDZ;
 				INFOPLIST_FILE = MatchMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Zhifeng.MatchMatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZhifengTan.MatchMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
